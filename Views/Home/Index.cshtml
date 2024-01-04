@@ -1,0 +1,17 @@
+﻿@using (Html.BeginForm("Upload", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div>
+        <p>Upload Image</p>
+        <input type="file" name="file" />
+    </div>
+    <br />
+
+    <input type="submit" value="Upload" />
+}
+
+@if (!string.IsNullOrEmpty(ViewBag.Base64Image))
+{
+    <p>Base64 Image:</p>
+    <textarea readonly rows="10" cols="50">@ViewBag.Base64Image</textarea>
+    <br />
+}
