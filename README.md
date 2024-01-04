@@ -1,1 +1,1 @@
-Web page where you upload image. The image is converted to base64 and saved to a database
+A web page that converts uploaded image to Base64 string using .NET C#
